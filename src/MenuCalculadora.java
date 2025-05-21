@@ -9,7 +9,7 @@ public class MenuCalculadora extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
-        getContentPane().setBackground(new Color(245, 245, 245));
+        getContentPane().setBackground(new Color(13, 13, 13));
         setLayout(null);
 
         JButton botonDerivada = crearBoton("Calcular Derivada");

@@ -46,9 +46,9 @@ public class SpashScreen extends JFrame {
         urls[0] = getClass().getResource("./img/calculator.png"); // imagen del cap 1
         capitulos[0] = "<div align='center'><font face='Arial' size='5' color='red'><b>Calc Esta</b></font></div><br>" +
                 "<strong>Definición</strong><br><br>" +
-                "<br>Calc-Esta es una aplicación desarrollada como proyecto integrador de la carrera de Ingeniería de Sistemas, que funciona como una calculadora de funciones lineales de primer grado.<br> Su objetivo principal es ofrecer una herramienta sencilla, visual e intuitiva para ayudar tanto a estudiantes como a profesionales a resolver, entender y graficar este tipo de ecuaciones, fortaleciendo así el pensamiento lógico-matemático.<br><br>" +         
+                "<br>Calc-Esta es una aplicación desarrollada como proyecto integrador de la carrera de Ingeniería de Sistemas, que funciona como una calculadora que te permite resolver, funciones lineales de primer grado, Derivadas e integrales.<br> Su objetivo principal es ofrecer una herramienta sencilla, visual e intuitiva para ayudar tanto a estudiantes como a profesionales a resolver, entender y graficar este tipo de ecuaciones, fortaleciendo así el pensamiento lógico-matemático.<br><br>" +         
                 "<div align='center'><img src=" + urls[0] + " width=200 height=200></div><br>" + 
-                "+ info: <a href = 'https://limewire.com/d/LTlk7#LA0kvILA4d'>Download The Documentation Here!</a><br>";
+                "+ info: <a href = 'https://limewire.com/d/Cj8np#l5MSmVmeSH'><b>Download The Documentation Here!</b></a><br>";
         
         urls[1] = getClass().getResource("./img/frustrado.png"); // imagen del cap 2
         capitulos[1] = "<div align='center'><font face='Arial' size='5' color='red'><b>¿Por qué se crea?</b></font></div><br>" +
@@ -60,9 +60,9 @@ public class SpashScreen extends JFrame {
         capitulos[2] = "<div align='center'><font face='Arial' size='5' color='red'><b>Funcionamiento</b></font></div><br>" +
                 "<b>¿Como Funciona Calc-Esta?</b><br><br>" +
                 "Esta aplicación en Java es una calculadora gráfica que permite resolver ecuaciones lineales, calcular derivadas e integrales definidas. Está hecha con la librería <b>Swing y Flatlaf</b>, por lo tanto, tiene una interfaz gráfica compuesta por campos de texto, etiquetas y botones. <br><br>" +         
-                "La interfaz permite al usuario ingresar una función matemática en forma de texto <b>(Func(),a,b)</b>, así como dos valores numéricos que se utilizan dependiendo de la operación que se quiera realizar. Estos valores sirven como coeficientes de una ecuación lineal o como límites inferior y superior para una integral definida. Los botones disponibles en la interfaz ejecutan las operaciones respectivas:<br><br> resolver la ecuación, derivar la función o integrar la función en un intervalo.<br><br>"+
+                "La interfaz permite al usuario ingresar una función matemática en forma de texto <b>Funciones lineales, Derivadas e integrales</b>, así como dos valores numéricos que se utilizan dependiendo de la operación que se quiera realizar. Estos valores sirven como coeficientes de una ecuación lineal o como límites inferior y superior para una integral definida. Los botones disponibles en la interfaz ejecutan las operaciones respectivas:<br><br> resolver la ecuación, derivar la función o integrar la función en un intervalo.<br><br>"+
                 "<div align='center'><img src=" + urls[2] + " width=400 height=400></div><br>" + 
-                "🌐 <a href = '#'>Codigo Fuente...</a><br> alt='Pronto Disponible...'";
+                "🌐 <a href = 'https://github.com/UnderMind-CO/PI-POO'<b>Codigo Fuente...</b></a>";
     }
      
     public void crearGUI() {        

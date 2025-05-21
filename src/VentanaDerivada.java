@@ -13,12 +13,12 @@ public class VentanaDerivada extends JFrame {
 
     public VentanaDerivada(JFrame ventanaAnterior) {
         setTitle("Calculeme Esta - Derivada");
-        setSize(450, 420);
+        setSize(450, 350);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setLayout(null);
-        getContentPane().setBackground(new Color(250, 250, 250));
+        getContentPane().setBackground(new Color(15, 15, 15));
 
         JLabel etiqueta = new JLabel("Función f(x):");
         etiqueta.setBounds(50, 30, 300, 30);
@@ -42,11 +42,11 @@ public class VentanaDerivada extends JFrame {
         add(etiquetaResultado);
 
         JButton botonGraficar = new JButton("Graficar");
-        botonGraficar.setBounds(200, 200, 150, 30);
+        botonGraficar.setBounds(193, 200, 150, 30);
         add(botonGraficar);
 
         JButton botonRegresar = new JButton("Regresar");
-        botonRegresar.setBounds(10, 250, 100, 25);
+        botonRegresar.setBounds(94, 200, 100, 30);
         botonRegresar.setFont(new Font("SansSerif", Font.PLAIN, 12));
         botonRegresar.setBackground(new Color(120, 120, 120));
         botonRegresar.setForeground(Color.WHITE);

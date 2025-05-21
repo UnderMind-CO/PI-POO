@@ -10,7 +10,7 @@ public class VentanaLineal extends JFrame {
 
     public VentanaLineal(JFrame ventanaAnterior) {
         setTitle("Ecuación Lineal");
-        setSize(450, 420); // Aumenta el tamaño de la ventana
+        setSize(450, 320); // Aumenta el tamaño de la ventana
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setLayout(null);
@@ -55,7 +55,7 @@ public class VentanaLineal extends JFrame {
         add(botonGraficar);
 
         JButton botonRegresar = new JButton("Regresar");
-        botonRegresar.setBounds(170, 360, 100, 30);
+        botonRegresar.setBounds(170, 235, 100, 30);
         add(botonRegresar);
 
         botonResolver.addActionListener(new ActionListener() {
@@ -82,12 +82,28 @@ public class VentanaLineal extends JFrame {
         });
 
         botonGraficar.addActionListener(e -> {
+            String FuncA = campoA.getText().trim();
+            String FuncB = campoB.getText().trim();
+            String FuncC = campoC.getText().trim();
+            if (FuncA.isEmpty()|| FuncB.isEmpty() || FuncC.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Por Favor Complete todos los campos", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+
             try {
                 double a = Double.parseDouble(campoA.getText());
                 double b = Double.parseDouble(campoB.getText());
                 double c = Double.parseDouble(campoC.getText());
-                // Abre la ventana de graficación dedicada
-                new VentanaGraficaLineal(a, b, c).setVisible(true);
+                
+                // Pasamos directamente los coeficientes A, B, C a la ventana gráfica
+                // y la solución calculada (si existe)
+                double solucion = Double.NaN; // Valor por defecto para casos sin solución única
+                if (a != 0) {
+                    solucion = (c - b) / a;
+                }
+                
+                // Abre la ventana de graficación dedicada con los coeficientes originales
+                new VentanaGraficaLineal(a, b, c, solucion).setVisible(true);
             } catch (NumberFormatException ex) {
                 resultado.setText("Por favor ingrese valores válidos.");
             }
@@ -95,7 +111,7 @@ public class VentanaLineal extends JFrame {
 
         botonRegresar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                new MenuCalculadora(ventanaAnterior).setVisible(true);
+                ventanaAnterior.setVisible(true);
                 dispose();
             }
         });

@@ -26,7 +26,7 @@ public class Desarrolladores extends JFrame {
 
         // Datos de los desarrolladores
         Object[][] devs = {
-            {"Jhoan David Naranjo Robledo", "230242068", "jhoan.naranjo01@uceva.edu.co", "imagenes.jpg/WhatsApp Image 2025-05-08 at 11.01.19 PM.jpeg"},
+            {"Jhoan David Naranjo Robledo", "230242068", "jhoan.naranjo01@uceva.edu.co", "imagenes.jpg/dev.jpeg"},
             {"Esteban Lozano Jaramillo", "230242048", "esteban.lozano01@uceva.edu.co", "imagenes.jpg/WhatsApp Image 2025-03-21 at 10.49.23 AM.jpeg"},
             {"Santiago Echeverri Torres", "230242047", "santiago.echeverri01@uceva.edu.co", "imagenes.jpg/WhatsApp Image 2025-05-08 at 8.45.01 AM.jpeg"},
             {"Juan David Gonzales Ospina", "230241015", "juan.gonzalez19@uceva.edu.co", "imagenes.jpg/WhatsApp Image 2025-05-16 at 8.06.45 AM.jpeg"}

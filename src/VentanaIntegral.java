@@ -13,12 +13,12 @@ public class VentanaIntegral extends JFrame {
 
     public VentanaIntegral(JFrame ventanaAnterior) {
         setTitle("Calculeme Esta - Integral");
-        setSize(450, 420);
+        setSize(450, 380);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setLayout(null);
-        getContentPane().setBackground(new Color(250, 250, 250));
+        getContentPane().setBackground(new Color(15, 15, 15));
 
         JLabel etiquetaFuncion = new JLabel("Función f(x):");
         etiquetaFuncion.setBounds(50, 20, 300, 30);
@@ -57,11 +57,11 @@ public class VentanaIntegral extends JFrame {
         add(etiquetaResultado);
 
         JButton botonGraficar = new JButton("Graficar");
-        botonGraficar.setBounds(260, 250, 100, 25);
+        botonGraficar.setBounds(200, 280, 100, 30);
         add(botonGraficar);
 
         JButton botonRegresar = new JButton("Regresar");
-        botonRegresar.setBounds(10, 250, 100, 25);
+        botonRegresar.setBounds(100, 280, 100, 30);
         botonRegresar.setFont(new Font("SansSerif", Font.PLAIN, 12));
         botonRegresar.setBackground(new Color(120, 120, 120));
         botonRegresar.setForeground(Color.WHITE);
